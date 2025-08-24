@@ -75,7 +75,7 @@ class LineNotifySystem:
         if not wlan.isconnected():
             print("Connecting to WiFi...")
 
-            wlan.connect(cls._WIFI_SSID, cls._WIFI_PASSWORD)
+            wlan.connect(WIFI_SSID, WIFI_PASSWORD)
             while not wlan.isconnected():
                 sleep(1)
 
